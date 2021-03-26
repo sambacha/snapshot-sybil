@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "type": "VerifiableCredential",
+  "credentialSubject": {
+    "id": "urn:uuid:2015e34c-9194-41a0-8b4e-ccc684255ba5"
+  },
+  "issuer": "did:example:foo",
+  "issuanceDate": "2021-01-22T21:02:14.669Z",
+  "proof": {
+    "type": "RsaSignature2018",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:example:foo#key1",
+    "created": "2021-01-22T21:02:14.669Z",
+    "jws": "eyJhbGciOiJSUzI1NiIsImtpZCI6InJzYTIwNDgtMjAyMC0wOC0yNSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..LhcGRaPpiM3Ls4BDOoWm5OuNrfpD1VWT2H6Q6z0LckxXgV2vk7YojHHkvcxesou6kBuy6kPZVfBPUIOVNU0KyrVcwV7jAhcXVumJGToiF3YbIm2D5k_mlT0pbaeaT81bMsPaar9qUwbdf8ZdCQ93e2c9LHqKTKJoB48TkBsKinCz3oJV815sUhEBN_OUj0EZa0l8_fopVWmwcxyp3nLW7YtxbqDoIbEGWH71QSu9_RVeFRuXl_0tfX0y7iqVYQTTl4E8ibuvBSp-eVqg6wrPgNd6lYUHefgNYiUtUe3X9J6zcOCCrTwXpAgx5yJP3REBDT2dPiQQKAR6eRreVoq0IQ"
+  }
+}
