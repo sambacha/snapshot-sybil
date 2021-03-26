@@ -1,0 +1,16 @@
+[workspace]
+members = [
+  "http",
+  "cli",
+  "lib",
+  "lib/cbindings",
+  "lib/node/native",
+  "lib/web"
+]
+
+default-members = [
+  "http",
+  "cli",
+  "lib",
+  "lib/cbindings",
+]

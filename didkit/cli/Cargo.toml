@@ -1,0 +1,29 @@
+[package]
+name = "didkit-cli"
+version = "0.1.0"
+authors = ["Charles E. Lehner <charles.lehner@spruceid.com>"]
+edition = "2018"
+
+[features]
+default = ["ring"]
+ring = ["ssi/ring"]
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+didkit = { path = "../lib", features = ["http-did"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+structopt = "0.3"
+did-key = { path = "../../ssi/did-key" }
+ssi = { path = "../../ssi", default-features = false }
+
+[dev-dependencies]
+tokio = { version = "1.0", features = ["macros", "process"] }
+hyper = { version = "0.14", features = ["server", "client", "http1", "stream"] }
+percent-encoding = { version = "2.1" }
+futures = "0.3"
+
+[[bin]]
+path = "src/main.rs"
+name = "didkit"
